@@ -57,3 +57,6 @@ def delete(request, article_id):
             'article': article,
         }
         return render(request, 'blog/delete.html', params)
+
+def home(request):
+    return render(request, 'blog/home.html')
